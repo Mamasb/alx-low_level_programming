@@ -1,0 +1,9 @@
+# Define the compiler to use
+CC = gcc
+
+# List all the source files
+SRC = main.c school.c
+
+# Rule: uses variables to build the school executable file
+all:
+	$(CC) $(SRC) -o school
